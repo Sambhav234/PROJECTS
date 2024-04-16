@@ -1,0 +1,154 @@
+*{
+    margin-top: 0;
+}
+
+#bar{
+    border: 2px solid whitesmoke,;
+    background-color: white;
+    height: 70px;
+    width: 1280px;
+    position: fixed; 
+    margin-top: 0 ;   
+    z-index: 1;
+}
+#img{
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 50px;   
+}
+#d{
+    
+    height: 40px;
+    width:80px ;
+    color: white;
+    background-color: #6674CC;
+    position: absolute;
+    left: 500px;
+    bottom: 15px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+#d:hover{
+    box-shadow: 2px 2px 8px black ;
+
+}
+#alpha{
+
+    height: 40px;
+    width:90px ;
+    color: #6674CC;
+    border:2px solid #6674CC;
+    background-color:white;
+    position: absolute;
+    left: 605px;
+    bottom: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+#alpha:hover{
+    box-shadow: 2px 2px 8px black ;
+}
+#home{
+    position: absolute;
+    left: 715px;
+    bottom: 2px;
+}
+#course{
+    position: absolute;
+    left: 780px;
+    bottom: 20px;
+    font-size:15px ;
+    border: 2px solid white;
+    background-color: white;
+
+}
+#res{
+    position: absolute;
+    left: 870px;
+    bottom: 20px;
+    font-size: 15px;
+    border: 2px solid white;
+    background-color: white;
+}
+#mycs{
+    position: absolute;
+    left: 975px;
+    bottom: 2px;
+    border: 2px solid white;
+    background-color: white;
+}
+#sign{
+    position: absolute;
+    left: 1090px;
+    bottom: 2px;
+    border: 2px solid white;
+    background-color: white;
+}
+#sam{
+    background-color:#f8f8fd;
+    height: 80px;
+    width: 1280px;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+#aman{
+    margin: 0 auto;
+    height: 450px;
+    width: 400px;
+    background-color:whitesmoke;
+
+}
+#im{
+    width: 400px;
+}
+label{
+    position: relative;
+    left: 18px;
+}
+input[type="range"]{
+    width: 300px;
+}
+#cont{
+    position: relative;
+    left: 18px;
+    background-color: #6674CC;
+    color: white;
+    font-size: 15px;
+    width: 150px;
+    padding: 5px 0 5px 0;
+    margin: 10px;
+}
+.a{
+    display: inline-block;
+}
+#help{
+    position: absolute;
+    left: 300px;
+}
+li{
+    line-height: 25px;
+}
+#head{
+    display: inline-block;
+}
+#git{
+    position: absolute;
+    left: 500px;
+}
+.list{
+    display: inline-block;
+}
+#contact{
+    position: absolute;
+    left:1030px ;
+}
+.rang{
+    text-decoration: none;
+    color: black;
+}
+#me{
+    text-align: center;
+    position: relative;
+    top: 250px;
+}

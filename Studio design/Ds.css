@@ -1,0 +1,204 @@
+*{
+  font-size: 23px;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.main-box{
+  background-image: url("https://github.com/apna-college/Delta/blob/main/CSS/Mini%20Project/photo.jpg?raw=true");
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-box input{
+   display: none; 
+}
+.btn-one{
+  position: absolute;
+  left: 16px;
+  top: 15px;
+  z-index: 1;
+}
+.btn-one i{
+  color: white;
+  font-size: 30px;
+  transition: all 0.2s ease-in-out 0s;
+}
+.btn-two{
+  position: absolute;
+  left: 90%;
+  color: white;
+  opacity: 0.6;
+  top: 7px;
+}
+.sidebar{
+  position: fixed;
+  left: -300px;
+  height: 100%;
+  width: 300px;
+  background-color: rgba(255,255,255,0.15);
+  box-shadow: 0px 0px 10px  rgba(255,255,255,0.15);
+  transition: all 0.3s ease-in 0s;
+  z-index: 1;
+}
+.sidebar .logo a{
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  left: 50px;
+  transition: font-size 0.15s ease-in 0s;
+}
+.sidebar .logo{
+  padding: 10px 5px 40px 5px;
+  text-align: center;
+  margin-bottom: 15px;
+  box-shadow: 0 0 6px rgba(255,255,255,0.60);
+}
+.menu a{
+  color: white;
+  text-decoration: none;
+}
+.menu li{
+  list-style-type: none;
+  padding: 10px 0px 10px 10px;
+}
+.menu i{
+  color: white;
+  padding:15px 15px 0 30px;
+}
+.social i{
+  position: relative;
+  color: white;
+  opacity: 0.7;
+  left: 55px;
+  padding-right: 10px;
+  top: 35px;
+  font-size: smaller;
+}
+.sidebar .menu li:hover{
+  box-shadow: 0 0 10px rgba(255,255,255,0.40);
+}
+.menu li a:hover{
+  font-size: 25px;
+}
+.menu li i:hover{
+  transform: scale(1.2);
+ }
+.sidebar .logo a:hover{
+  font-size: 24px;
+ }
+ .social i:hover{
+  transform: scale(1.2);
+  opacity: 1;
+ }
+ .btn-one i:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+ }
+ .btn-two i:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+ }
+#check:checked~.sidebar{
+  left: 0;
+}
+#check:checked~.btn-one{
+  display: none;
+}
+.content{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 1s ease-in-out 0.1s;
+}
+.card{
+  height: 380px;
+  width: 300px;
+  background-color: rgba(255,255,255,0.1);
+  display: flex;
+  flex-wrap: wrap;
+}
+p{
+  position: absolute;
+  top: 60px;
+  font-family:fontawesome;
+  font-size: 35px;
+  color: gainsboro;
+  transition: all 0.15s ease-in-out 0s;
+}
+p:hover{
+  font-size: 36px;
+  animation: position 4s ease-in-out 3s 1 alternate;
+}
+.card img{
+  width: 100%;
+  height: 250px;
+  border-radius: 10px 10px 0px 0px;
+}
+.card{
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out 0s;
+  position: relative;
+  top: 30px;
+}
+.cont{
+  text-align: center;
+}
+.card:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 6px rgb(182, 137, 25);
+  cursor: pointer;
+}
+.card h3{
+  color: rgb(176, 170, 170);
+}
+#check:checked~.content{
+  left: 300px;
+  width: 75%;
+}
+p:nth-of-type(1){
+  top: 30px;
+  line-height: 10px;
+  font-family:poppins ;
+  color: gray;
+  height: 20px;
+
+}
+p:nth-of-type(2){
+  top: 85px;
+}
+p:nth-of-type(1)::first-line{
+  box-shadow: 2px 6px 8px red;
+}
+
+@keyframes spin{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+@keyframes position {
+  from{
+    left: 0;
+  }
+  to{
+    left: 600px;
+  }
+}
+.card:nth-of-type(1):hover{
+  animation: spin 1s ease-in-out 3s 1 normal ;
+}
+.card:nth-of-type(2):hover{
+  animation: spin 1s ease-in-out 3s 1 normal ;
+}
+.card:nth-of-type(3):hover{
+  animation: spin 1s ease-in-out 3s 1 normal ;
+}
+
